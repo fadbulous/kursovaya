@@ -1,0 +1,500 @@
+/* Обнуление отступов и границ у html и body */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.fon {
+  background-attachment: fixed;
+  background-color: #ffffff;
+  width: 1920px;
+  max-width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.osnovnoe{
+  width: auto;
+  height: auto;
+  background-color: #ffffff;
+  top: 0; /* Располагаем его в верхней части страницы */
+  left: 0; /* Располагаем его по левому краю */
+  margin-top: 0;
+  padding-bottom: 10%;
+}
+
+.bottom-menu {
+  position: fixed;
+  height: 150px;
+  background-color: #7d56bb;
+  margin: 0;
+  position: relative;
+  justify-content:end;
+  background: #6c56cf no-repeat bottom  bottom fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  max-width: 100%;
+}
+
+ul {
+  /* Добавим фоновый цвет для нашего меню */
+  background:#cb96e0;
+  /* Выставим высоту */
+  height: 100px;
+  /* Уберем точки у li элементов */
+  list-style-type: none;
+  /* добавим отступ, чтобы крайние значения меню не были прижаты в плотную к границам меню */
+  padding: 30px;
+  /* Используем flexbox */  
+  display: flex;
+  justify-content: center;
+  /* Дополнительно сделаем вертикальное выравнивание */
+  align-items: center;
+  padding-left: 3%;
+  gap: 10%;
+  color: #ffffff;
+}
+
+.top-menu {
+  height: 100px;
+  width: 100%; /* Ширина 100% */
+  background-color: #AF91DE;
+  padding: 0;
+  margin: 0; /* Отменяем все внешние отступы */
+  position: fixed; /* Закрепляем меню наверху */
+  top: 0; /* Располагаем его в верхней части страницы */
+  left: 0; /* Располагаем его по левому краю */
+  padding: 0 10px; /* Добавляем паддинг для удобства */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  margin-left: 45%; /* Расстояние между элементами меню */
+  text-decoration: none;
+  color: #ac2a2a;
+  font-size: 23px;
+  gap: 40px;
+}
+
+.user-name {
+  display: flex;
+  align-items: center; /* Выравниваем элементы по центру по вертикали */
+  margin-right: 2%;
+  font-size: 18px;
+  color: #d31a1a;
+}
+
+.user-name img {
+  width: 55px; /* Ширина изображения пользователя */
+  height: 55px; /* Высота изображения пользователя */
+  border-radius: 50%; /* Делаем изображение круглым */
+}
+
+.name {
+  font-size: 32px;
+  color: #46085f;
+  display: flex; /* Делаем контейнер флексбоксом */
+  align-items: center; /* Выравниваем элементы по центру по вертикали */
+  margin-right: 100px;
+  top:50%;
+  display: flex; /* Делаем контейнер флексбоксом */
+  align-items: center; /* Выравниваем элементы по центру по вертикали */
+}
+
+.name_1 {
+  font-size: 32px;
+  color:#38065a;
+  align-items: center; /* Выравниваем элементы по центру по вертикали */
+  margin-right: 100px;
+  display: flex; /* Делаем контейнер флексбоксом */
+  align-items: center; /* Выравниваем элементы по центру по вертикали */
+  padding-left:5% ;
+  padding-top: 1%;
+}
+
+body::before {
+  content: "";
+  display: inline-block;
+  height: 100px; /* Высота равна высоте меню */
+  width: 3000px;
+}
+
+h1 {
+  color: #300864;
+}
+
+.registration-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #4d0491;
+  border-radius: 20px;
+  background-color:#fffffff9;
+  margin-top: 3%;
+}
+
+.card-form {
+  margin-top: 5%;
+  margin-left: -2%;
+  width: 387px;
+  height: 200px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: #500772;
+  display: flex;
+  align-items: flex-start; /* Содержимое контейнера сверху */
+  gap: 0px; /* Расстояние между полями */
+  padding-left: 10px;
+  padding-top: 10px; /* Отступ сверху */
+  color: #380864;
+}
+
+
+.login-form {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #2d035e;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color:#47046e;
+
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #2e044b;
+  border-color: #2c086e;
+  background-color: #dccfe6;
+  border-radius: 10px;
+}
+
+.button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  background-color: #885abd;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.logout-button{
+  padding: 10px 15px;
+  margin-left: 1700px;
+  margin-top: -5%;
+  background-color: #8661b1;
+  color: white;
+  border-radius: 50%;
+  border-color: #280668;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.btn1 {
+  margin-right: 30px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  background-color: #ffffff79;
+  border-color: none;
+  border: 3px solid #3e1088;
+  border-radius: 50px;
+  font-size: 22px;
+  padding: 11px 10px 10px 11px;
+}
+.btn2 {
+  cursor: pointer;
+  background-color: #ffffff;
+  border-color: none;
+  border: 3px solid #3e1088;
+  border-radius: 50px;
+  font-size: 22px;
+  padding: 11px 10px 10px 11px;
+}
+
+.conteiner1 {
+display: flex;
+margin-top: 13%;
+margin-left: 6%;
+gap: 10%;
+}
+
+.btn3 {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  width: 297px;
+  height: 129px;
+  padding: 26px 25px 25px 31px;
+  overflow: hidden;
+  background: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(175, 145, 222, 1) 100%
+  );
+  border: 3px solid #3e1088;
+  border-radius: 50px;
+  font-size: 25px;
+  color:#280668;
+}
+
+.btn4 {
+  padding: 10px 15px;
+  margin-right: 60px;
+  margin-top: 40%;
+  background-color: #66c1fd;
+  color: white;
+  border-radius: 5px;
+  border-color: #920f9e;
+  cursor: pointer;
+}
+
+.btn5 {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  width: 297px;
+  height: 129px;
+  padding: 26px 25px 25px 31px;
+  overflow: hidden;
+  background: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(175, 145, 222, 1) 100%
+  );
+  border: 3px solid #3e1088;
+  border-radius: 50px;
+  font-size: 25px;
+  color:#280668;
+}
+
+.btn6 {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  width: 297px;
+  height: 129px;
+  padding: 26px 25px 25px 31px;
+  overflow: hidden;
+  background: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(175, 145, 222, 1) 100%
+  );
+  border: 3px solid #3e1088;
+  border-radius: 50px;
+  font-size: 25px;
+  color:#280668;
+}
+
+
+.error {
+  color: red;
+}
+
+.text {
+  font-size: 40px;
+  color:#a30000;
+  margin-left: -70%;
+  font-weight: bold;
+}
+
+.bottonP {
+  margin-right: 0%;
+  color:#881919;
+
+}
+.fon {
+  color: #792929;
+  margin: 0;
+}
+.container_3 {
+  margin-top: 0%;
+  margin-left: 35%;
+  margin-right: 10%;
+  background-color:#ffffffb9 ;
+  color:#33074d;
+}
+
+.currency-rates {
+  text-align: center;
+  color: rgb(146, 22, 22);
+}
+
+.currency-list {
+  border: #5c11a3 solid 2px;
+  border-radius: 50px;
+  list-style: none;
+  padding: 0;
+  background-color: #b472da41;
+  color: #33074d;
+  height: 50px;
+  width: 1055px;
+}
+
+.currency-item {
+  color: rgb(70, 26, 151);
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex; /* Делаем контейнер флексбоксом */
+  align-items:flex-start; /* Выравниваем элементы по центру по вертикали */
+  padding-left: 10%;
+  margin-top: -7%
+}
+
+.table {
+  margin-top: -7%;
+  color:#500d77;
+}
+
+.container_for_regAndLog{
+  display: flex; 
+  align-items: center;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 10%;
+}
+
+.reclama {
+  display: flex;
+  align-items: normal;
+  margin-top: 25%;
+  margin-left: -75%;
+}
+.photo {
+  margin-left: 55%;
+ margin-top: -39%;
+}
+.photo1 {
+  margin-left: 55%;
+ margin-top: -43%;
+}
+
+.image {
+  display: flex;
+  margin-left: 70%;
+  margin-top: -40%;
+}
+
+.nazvanie {
+  margin-top: 0%;
+  margin-right: 60%;
+  font-size: 40px;
+  color: #3a0e5f;
+  font-weight: bold;
+}
+
+.perevod {
+  max-width: 440px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 2px solid #490788;
+  border-radius: 20px;
+  background-color:#ae79eb41;
+  border-color: #410b88;
+  margin-right: -80%;
+  color: #2e044b;
+}
+
+.sum {
+  background-color: #ffffff;
+  color: #45096d;
+  border-bottom: #54107c;
+  margin-top: 40%;
+  margin-left: 14%;
+}
+
+.btn7 {
+  margin-left: 13%;
+  margin-top: 40%;
+  background-color:#49076383;
+  border: 7px solid #40035c11;
+  border-radius: 15px;
+  font-size: 25px;
+  padding-left: 60%;
+  padding-right: 60%;
+  color: floralwhite;
+}
+.vvod {
+
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border: 2px solid #34076e;
+  border-radius: 15px;
+  background-color:#fffffff9;
+  justify-items: center;
+  align-items: left;
+  font-size: 17px;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+
+} 
+
+.vvod_1 {
+
+  padding-top: 1%;
+  padding-bottom: 1%;
+  outline-width: 0;
+  border: 0;
+  border-bottom: 1px solid #46065f;
+  background-color:#ffffff;
+  justify-items: center;
+  align-items: left;
+  font-size: 19px;
+  padding-right: 15%;
+  text-align: left;
+  color: #410b74;
+} 
+
+.container_4 {
+  margin-top: 12%;
+  margin-left: 10%;
+  padding-right: 30%;
+  padding-left: 10%;
+  max-width: 1000px;
+}
