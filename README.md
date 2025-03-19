@@ -38,6 +38,34 @@
 # ERD-диаграмма
 ![erd](./src/assets/image_2025-02-14_00-07-20.png)
 
+## Фото
+
+# Авторизация
+![foto](./src/assets/1.jpg)
+
+# Вход
+![foto](./src/assets/2.jpg)
+
+# Ошибка
+![foto](./src/assets/3.jpg)
+
+# Дата
+![foto](./src/assets/4.jpg)
+
+# Главная
+![foto](./src/assets/5.jpg)
+
+# Перевод 1
+![foto](./src/assets/6.jpg)
+
+# Перевод 2
+![foto](./src/assets/7.jpg)
+
+## Unit-тестирование
+![foto](./src/assets/8.jpg)
+
+
+
 # my-vue-app
 
 ## Project setup
